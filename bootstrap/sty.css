@@ -1,0 +1,428 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif,F_koodak;
+    background-color: #cef;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    background-color: #eee;
+}
+body {
+
+    margin: 0px;
+}
+li {
+    font-family: Tahoma;
+    float: right;
+    color: #333;
+    font-size: 13px;
+    width: 120px;
+    height: 52px;
+    cursor: pointer;
+    line-height: 52px;
+    margin-top: 0px;
+    list-style-type: none;
+    border-top: 3px solid #fafafa;
+}
+.lim li{
+    font-family: Tahoma;
+    color: #333;
+    font-size: 13px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    text-align: right;
+    line-height:40px;
+    list-style-image: url("../ic.png");
+}
+li li{
+    font-family: Tahoma;
+    color: #333;
+    list-style-position: inside;
+    font-size: large;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    margin-top: -3px;
+    background-color: #eee;
+    direction: rtl;
+    border: none;
+
+}
+
+li li ul{
+    margin-right: 120px ;
+    margin-top: -40px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+}
+
+li ul{
+    display:none;
+    border: none;
+}
+.lim li:hover{
+    list-style-image: url("../ic1.png");
+    background-color: #aaf;
+    border: none;
+}
+li:hover{
+    background-color: #fff;
+    border-top: 3px solid #00aaff;
+}
+li:hover > ul{
+    background-color: #777;
+    display: block;
+}
+.ullist{
+    display:inline-block;
+    height: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+}
+
+.content{
+    clear: both;
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    background-color: #fafafa;
+}
+article{
+    height: auto;
+    width: 100%;
+    box-shadow: 1px 1px 3px
+}
+.action{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    height: 42px;
+    position: relative;
+}
+
+
+header{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background-color: #fafafa;
+    z-index: 100;
+    /* background-color: #fafdfb;*/
+
+}
+.inheader{
+    height: auto;
+    width: 100%;
+    background-color: #fafafa;
+    z-index: 1000;
+    position: fixed;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+
+    /* background-color: #fafdfb;*/
+
+}
+.slider{
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+
+}
+.imuser{
+    width: 35px;
+    height: 35px;
+    line-height: 88px;
+    float: right;
+    margin:25px 0px 0px;
+    position: relative;
+    border-radius: 50%;
+ }
+.immenu{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin:5px 0px 0px;
+    vertical-align: center;
+    position: relative;
+    border-radius: 50%;
+}
+.login{
+    font-family:Tahoma;
+    width: auto;
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    height: 30px;
+    line-height: 20px;
+    float: left;
+    vertical-align: center;
+    margin: 5px 5px;
+    position: relative;
+    color: #dddddd;
+    background-color: #0af;
+    Border-radius:1px;
+    cursor: pointer;
+ }
+.login:hover{
+    color: #dddddd;
+    background-color: #0ae;
+    Border-radius:1px;
+
+}
+.text_user{
+    font-size: large;
+    line-height: 80px;
+    color: #333;
+    font-family:Tahoma;
+    float: right;
+    margin-right: 2px;
+}
+/********/
+.header_btn{
+    cursor: pointer;
+    margin-top: 24.5px;
+    position: absolute;
+    background-color: #333333;
+    font-family: "sans-serif";
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    height: 52%;
+    width: 12%;
+    color: #dddddd;
+    text-decoration: none;
+    border-bottom: 4px solid #333333;
+}
+.header_btn:hover{
+    color: #dddddd;
+    background-color: #555;
+    border-bottom: 4px solid #4CAF50 ;
+    text-decoration: none;
+
+}
+.edit_text{
+    direction: rtl;
+    margin-top: 10px;
+    margin-right: 0px;
+    border-radius:8px 0px 0px 8px;
+    border: 2px solid #0af;
+    width: 40%;
+    height: 8%;
+    font-size: 20px ;
+    padding: 2px 3% 2px 10%;
+    background-image: url("../Untitled-1-512.png");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: 2% 50%;
+  }
+.detail_edit_login{
+    margin-top: 5px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0af;
+    text-align: center;
+    height: 100%;
+    direction: rtl;
+    border: 2px solid #0af;
+    font-size: 20px ;
+}
+
+.edit_text:after{
+    margin-top: 10px;
+    font-family: Arial;
+    box-shadow: .5px .5px 10px .5px #555555;
+    border-radius: 50px;
+    direction: ltr;
+}
+input[type=submit] {
+    height: 8%;
+    width: 20%;
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0af;
+    border: none;
+    border-radius: 3px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 10px 2px;
+    cursor: pointer;
+ }
+input[type=submit]:hover {
+    background-color:#0aa;
+}
+/* sign in */
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 48%;
+    border: 2px solid #00aaaa;
+    display: inline-block;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 5px;
+    background: #f1f1f1;
+    font-size: 1.5em;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+/* login */
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 5%;
+    width: 30%; /* Full width */
+    height: 85%; /* Full height */ /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.0); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    height: 60%;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+@media (max-width: 1100px) {
+    #uml { display: none; }
+    #menu{display: none}
+}
+@media (max-width: 500px) {
+    #logo{display: none}
+    #menu{display:block }
+}
